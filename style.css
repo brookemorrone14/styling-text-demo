@@ -1,0 +1,103 @@
+/* The font-family property is used to style the typeface used in your website.
+
+Most computers have a few default fonts that we can almost guarantee to be there: Arial, Verdana, Georgia, Courier, Times New Roman, Comic Sans, and maybe a few more. */
+
+html {
+  /* Try to load Georgia, if it doesn't exist load another serif font */
+  font-family: Georgia, serif;
+  
+  /* When specifying a font family that has a space in its name we must surround it with quotes: */
+  font-family: "Comic Sans MS"
+}
+
+/* The above property will change all the text in the website to Georgia—assuming it’s installed on the computer—because we’ve targeted the html element.
+
+We really can’t guarantee that Georgia will be installed on the person’s computer, so it’s a good idea to provide a stylistic backup: serif, sans-serif, monospace, cursive. */
+
+
+
+/* 
+Font shorthand
+For fonts, we can actually specify a bunch of CSS properties on a single line in a more compact manner, called shorthand. 
+*/
+
+html {
+  /* font: font-style (optional) font-weight font-size/line-height font-family; */
+  font: normal 1rem/1.5 Georgia, serif;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+
+p.font-properties {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: bold;
+  line-height: 2.3;
+  
+}
+
+
+p.text-decorations {
+  text-transform: uppercase;
+  text-indent: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px -2px 6px purple;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Styling applied to make tutorial easier to follow.
+DO NOT UPDATE.
+*/
+
+code {
+  font-weight: bold;
+}
+
+dl span {
+  font-weight: bold;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: .75rem;
+  text-decoration: underline;
+}
+
+dd {
+  margin: 0;
+}
+
+section div {
+  margin: 3em 0;
+}
